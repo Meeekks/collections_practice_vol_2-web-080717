@@ -75,11 +75,11 @@ end
 def organize_schools(schools)
   result = {}
   schools.each do |school, school_hash|
-    school_hash.each do |location, ele|
-      if result[ele] == nil
-        result[ele] = [school]
+    school_hash.each do |location, place|
+      if result[place] == nil
+        result[place] = [school]
       else
-        result[ele] << school
+        result[place] << school
         end
       end
     end
